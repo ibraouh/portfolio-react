@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://ibraouh.github.io/portfolio-react",
+  "homepage": "https://ibraouh.github.io/portfolio-react/",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.3",
