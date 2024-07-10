@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--+ Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Personal Portfolio" content="Hi, and welcome to my personal portfolio. I am a math and computer science student at fordham university, interested in Artificial Intelligence and Machine Learning.">
+	<title>Raouh</title>
+
+	<!--+ Font API -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Red+Hat+Mono:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+	<!--+ CSS -->
+	<link rel="stylesheet" href="/css/styles_blog.css">
+</head>
+<body>
+
+	<!--!----------------------------------------------------------------------------->
+	<!--+ Headers -->
+	<header class="nav">
+		<ul>
+			<a href="/index.html" style="margin-right: 0.5%"><button class="resume_button" style="width: 200px">Main Page</button></a>
+			<a href="/content/resume.pdf" target="_blank" rel="noopener noreferrer"><button src="/content/resume.pdf" class="resume_button">Resume</button></a>
+		</ul>
+	</header>
+	<!--!----------------------------------------------------------------------------->
+	
+	
+	
+	<!--!----------------------------------------------------------------------------->
+	<!--+ Blog Information (Title, Date, Description) -->
+	<div class="blog_title">
+		<a href="javascript:history.back()"><button class="back_button resume_button">&lt; Back</button></a>
+
+		<h4>June 08, 2022;</h4>
+		<h1>Making a Tech Support Chatbot using Google's DialogueFlow CX</h1>
+		<p class="blog_description">
+			In this blog, I will document the whole process of making a Custumer Support Bot, which is the main project of my internship. I will be using google's DialogueFlow (previously called API.AI) in order to achieve this.<br>	
+		</p>
+		<p>
+		<b style="margin-top: 40px; color: red">NOTE: </b> You can play around with the chat bot that I've created in the bottom right corner of this page :)
+		</p>
+	</div>
+	<!--!----------------------------------------------------------------------------->
+	
+	
+	
+	<!--!----------------------------------------------------------------------------->
+	<!--+ Blog Main Paragraphs -->
+	<div class="blog_main">
+		<h2>Introduction: Why DialogueFlow?</h2>
+		<p class="blog_paragraph">There were a lot of platforms to make chat bots like Microsoft Bot Framework, or IBM Watson; but I chose DialogueFlow because it was recommended by a colleage, and agter evaluating the other frameworks I've realized that DialogueFlow would require less work and be a simpler approach. Plus DialogueFlow is free for my use case. </p>
+		
+		<h3>What's the Flow bro?</h3>
+		<p>We first start by setting up our flow and how we're going to make this bot work logically. This is ironically not done on DialogueFlow, but instead is done on pen and paper. This is the flow I chose to make for a fictional Technical Support Bot agent that can be implemented in a website.</p>
+		
+		<img style = "border-radius: 10px; display: block; margin-left: auto; margin-right: auto;" src="/posts/assets/chatBot/flow.jpg" alt="Flow image" width=80%>
+		
+		<p>After Establishing the flow, we can move on to actually implementing it on DialogueFlow. To make the implementation easier and avoid hours of debugging, I recommend starting with the moving pieces first, meaning the intents (which is what the bot thinks the user wants) and the entities (similar to Parameters)</p>
+
+		<h5 style="font-size: 105%; margin-bottom: 0; margin-top:3%">Intents:</h5>
+		<p>Intents are the tricky part, however when you get the hang of it, it becomes much easier, and simplifies the process in the future as well. this is how I chose to lay out my intents:</p>
+		
+		<img style = "border-radius: 5px; display: block; margin-left: auto; margin-right: auto;" src="/posts/assets/chatBot/intents.jpg" alt="Flow image" width=80%>
+
+
+	<!--!----------------------------------------------------------------------------->
+	
+
+	<!--!----------------------------------------------------------------------------->
+	<!--+ Script -->
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+	<df-messenger
+		df-cx="true"
+		location="europe-west3"
+		chat-title="Tech Support Bot"
+		agent-id="e8cfe494-c645-45c5-a962-9efdd5b00018"
+		language-code="en"
+	></df-messenger>
+	<!--!----------------------------------------------------------------------------->
+	
+
+	<!--!----------------------------------------------------------------------------->
+	<!--+ Footer -->
+	<footer class="end_of_blog"></footer>
+	<!--!----------------------------------------------------------------------------->
+
+</body>
+</html>

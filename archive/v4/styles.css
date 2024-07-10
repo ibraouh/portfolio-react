@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* 
+Main Background Color : #e0ddd7
+Green Accent Color    : #1c2c2f
+Red Accent Color      : #8a3f24
+*/
+
+/*+ General Settings -------------------------------------------- +*/
+body {
+  background-color: #e0ddd7;
+  /* font-family: "Libre Franklin", sans-serif; */
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Unbounded", cursive; */
+  /* font-family: 'Playfair Display', serif; */
+  font-family: "Caudex", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.separation {
+  width: 100%;
+  height: 50px;
+}
+
+.mobile {
+  display: none;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Section Backgrounds ----------------------------------------- +*/
+#work {
+  background-color: #1c2c2f;
+  color: #e0ddd7;
+}
+
+#research {
+  background-color: #8a3f24;
+  color: #e0ddd7;
+}
+
+#research h1 {
+  text-align: center;
+}
+
+.main_content {
+  padding: 3%;
+}
+
+.main_content h1 {
+  margin-top: 0;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Header Settings --------------------------------------------- +*/
+header {
+  /* padding-bottom: 10px; */
+  border-bottom: solid 1px gray;
+  height: 90px;
+}
+
+#thin {
+  font-weight: 100;
+}
+
+header h1 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  margin-top: 13px;
+  margin-left: 40px;
+}
+
+header nav {
+  padding: 20px;
+  width: 55%;
+  float: right;
+}
+
+header nav ul {
+  text-align: right;
+  list-style-type: none;
+  padding: 0;
+  padding-right: 40px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+header nav ul li:hover {
+  font-weight: 400;
+  transition: 0.1s;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ About Me Section -------------------------------------------- +*/
+
+#about_me h1 {
+  font-size: 70px;
+  margin-top: 100px;
+  font-weight: 200;
+  line-height: 50pt;
+  margin-bottom: 10px;
+}
+
+#about_me div.right {
+  width: 50%;
+  height: 750px;
+  float: right;
+  /* margin-top: 20px; */
+  /* background-color: blue; */
+}
+
+#about_me div.left {
+  width: 50%;
+  height: 750px;
+  float: left;
+  /* background-color: #1c2c2f; */
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#about_me div.info {
+  width: 80%;
+  font-size: 18px;
+  margin-left: 12%;
+}
+
+#about_me img {
+  /* margin-left: 40%; */
+  float: right;
+  margin-right: 10%;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+#about_me ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#about_me ul li {
+  margin: 15px 0px;
+  /* text-align: center; */
+}
+
+#about_me ul li a {
+  padding: 18px;
+  border: solid 1px #1c2c2f;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  width: 350px;
+}
+
+#about_me ul li a:hover {
+  background-color: #1c2c2f;
+  color: white;
+  transition: 0.4s;
+}
+
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Work XP Section --------------------------------------------- +*/
+#work h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#work {
+  padding-bottom: 45px;
+}
+
+.job {
+  /* border: solid yellow; */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+}
+
+.job .job_date {
+  /* border: solid; */
+  padding-top: 11px;
+  width: 18%;
+  float: left;
+}
+
+.job .content {
+  /* border: solid blue; */
+  width: 80%;
+  float: left;
+}
+
+.job_date p {
+  width: 80%;
+}
+
+#work b {
+  color: #d8937a;
+}
+
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Projects Section -------------------------------------------- +*/
+.project_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+#projects p em {
+  color: #e0ddd7;
+  background-color: #1c2c2f;
+  padding: 5px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.proj_img {
+  border-radius: 20px;
+}
+
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Research Section ------------------------------------------- +*/
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+#research h5 {
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+#research h4 {
+  margin-bottom: 0px;
+}
+
+#research b {
+  color: #2b331d;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Footer Section ---------------------------------------------- +*/
+
+footer {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#signature ul {
+  padding-bottom: 10px;
+  text-decoration: underline;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#socials ul {
+  text-decoration: none;
+  text-align: right;
+  list-style-type: none;
+}
+
+.email {
+  text-decoration: underline;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Mobile Section ---------------------------------------------- +*/
+@media screen and (max-width: 1200px) {
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects.main_content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  #first_elem {
+    padding-left: 3%;
+  }
+
+  #projects h1 {
+    padding-left: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  #about_me img {
+    width: 360px;
+    margin-top: 40px;
+  }
+
+  #about_me h1 {
+    margin-top: 30px;
+  }
+
+  #about_me div.right {
+    height: 560px;
+  }
+
+  #about_me div.left {
+    height: 560px;
+  }
+
+  #about_me div.info {
+    font-size: 18px;
+    margin-left: 5%;
+  }
+
+  header h1 {
+    width: 40%;
+  }
+
+  header nav {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header h1 {
+    width: 100%;
+  }
+
+  #about_me img {
+    width: 320px;
+    margin-top: 40px;
+  }
+
+  #about_me h1 {
+    margin-top: 30px;
+    font-size: 300%;
+  }
+
+  #about_me p {
+    font-size: 90%;
+  }
+
+  #about_me ul li a {
+    padding: 13px;
+    width: 270px;
+    font-size: 90%;
+  }
+
+  #about_me div.right {
+    height: 520px;
+  }
+
+  #about_me div.left {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  #work p {
+    font-size: 85%;
+  }
+
+  #about_me img {
+    margin-top: 55px;
+    width: 240px;
+  }
+
+  #about_me h1 {
+    font-size: 250%;
+    line-height: 35pt;
+  }
+
+  #about_me ul li a {
+    padding: 10px;
+    width: 220px;
+    font-size: 80%;
+  }
+
+  #about_me div.right {
+    height: 460px;
+  }
+
+  #about_me div.left {
+    height: 460px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  #about_me img {
+    display: none;
+  }
+
+  #about_me div.right {
+    width: 100%;
+    height: 500px;
+  }
+
+  #about_me div.left {
+    display: none;
+  }
+
+  #about_me ul li a {
+    padding: 17px;
+    width: 320px;
+    font-size: 100%;
+  }
+
+  header h1 {
+    margin-left: 10px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .job .job_date {
+    width: 100%;
+  }
+
+  #work div.content {
+    width: 100%;
+  }
+
+  .split {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  #about_me ul li a {
+    padding: 13px;
+    width: 90%;
+    font-size: 90%;
+  }
+}

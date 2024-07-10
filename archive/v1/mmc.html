@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MMC Experience" content="This page includes information about Ibrahim's internship at MMC (ADM).">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_btn .fa-times-circle").hide();
+
+            $(".hamburger_btn .fa-bars").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-times-circle").show();
+                $(".navbar_mobile ul").addClass("active");
+            });
+
+            $(".hamburger_btn .fa-times-circle").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-bars").show();
+                $(".navbar_mobile ul").removeClass("active");
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/ico" href="files/favicon.ico">
+    <title>MMC Experience</title>
+</head>
+
+<body>
+    <nav role="navigation" class="navbar">
+        <ul>
+            <a class="first" href="index">.hello( )</a>
+            <a href="education">.education( )</a>
+            <a href="skills">.skills( )</a>
+            <a id="current" href="mmc">.MMC_experience( )</a>
+            <a href="kgs">.KGS_Experience( )</a>
+        </ul>
+    </nav>
+
+    <nav role="navigation" class="navbar_mobile">
+
+        <div class="hamburger_btn">
+            <i class="fa fa-bars" aria-hidden="false"></i>
+            <i class="fa fa-times-circle" aria-hidden="false"></i>
+        </div>
+
+
+        <ul>
+            <li><a class="first" href="index">.hello( )</a></li>
+            <li><a href="education">.education( )</a></li>
+            <li><a href="skills">.skills( )</a></li>
+            <li><a id="current" href="mmc">.MMC_experience( )</a></li>
+            <li><a href="kgs">.KGS_Experience( )</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="top_links">
+            <ul id="transparent" class="contact_list">
+                <ul id="transparent" class="contact_list">
+                    <a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                        <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                    </a>
+                    <a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                        <img src="files/github.png" alt="github logo" width="50" height="50">
+                    </a>
+                    <a href="mailto:ibrahimsecondary@gmail.commail.com">
+                        <img src="files/mail.png" alt="email logo" width="50" height="50">
+                    </a>
+                    <a href="tel: +212675204495">
+                        <img src="files/call.png" alt="phone icon" width="50" height="50">
+                    </a>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content_wrapper">
+        <img id="adm_logo" src="files/adm.png" alt="Moroccan Motorway Company's Logo" width="100" height="100">
+        <h1 class="with_logo">Moroccan Motorway <br>Company (ADM)</h1>
+        <p>
+            I have had the great opportunity to experience my first job in the Tech Industry in the summer of my junior
+            year of High School,
+            where I was closely monitored and mentored by professionals in the field. I was given the main task of Agent
+            at the central Agency
+            of the Moroccan Motorway Company in Rabat, Morocco, and was also in charge of all the Hardware and Software
+            used by the Agents.
+            This job experience came with many perks, such as constant interactions with important clients (mostly
+            businesses
+            and Public Sector High Profile Workers),
+            excellent teamwork, and a great work environment. With my mentors' confirmation, I have decided to update
+            the computers used by the agents to faster
+            and modern machines. This boosted the morale of the agents as workflow was consistently faster. However,
+            since the agency was still using an outdated
+            network system, scanning the clients' cards took about 30 seconds to reach HQ's databases. I have then
+            decided to migrate the relevant database directly
+            to the agency and create a duplicate at HQ, lowering the wait time to about .5 seconds.
+            <br><br>
+            Finally, my last action at the agency was to create a Google Business account for the agency, as customers
+            always complained that locating the agency was difficult:
+        </p>
+    </div>
+
+    <div class="content_wrapper">
+        <img id="jawaz_picture" style="padding-bottom: 25px;" src="files/jawaz.jpg" alt="Ibrahim's Portrait Photo"
+            width="722" height="618">
+    </div>
+
+    <footer class="fixed">
+        <ul id="transparent" class="contact_list">
+            <li><a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                    <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                </a></li>
+            <li><a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                    <img src="files/github.png" alt="github logo" width="50" height="50">
+                </a></li>
+            <li><a href="mailto:ibrahimsecondary@gmail.commail.com">
+                    <img src="files/mail.png" alt="email logo" width="50" height="50">
+                </a></li>
+            <li><a href="tel: +212675204495">
+                    <img src="files/call.png" alt="phone icon" width="50" height="50">
+                </a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
