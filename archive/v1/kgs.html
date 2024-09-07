@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="KGS" content="This page is Ibrahim's Experience with KGS during Covid-19 Pandemic.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_btn .fa-times-circle").hide();
+
+            $(".hamburger_btn .fa-bars").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-times-circle").show();
+                $(".navbar_mobile ul").addClass("active");
+            });
+
+            $(".hamburger_btn .fa-times-circle").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-bars").show();
+                $(".navbar_mobile ul").removeClass("active");
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/ico" href="files/favicon.ico">
+    <title>KGS Experience</title>
+</head>
+
+<body>
+    <nav role="navigation" class="navbar">
+        <ul>
+            <a class="first" href="index">.hello( )</a>
+            <a href="education">.education( )</a>
+            <a href="skills">.skills( )</a>
+            <a href="mmc">.MMC_experience( )</a>
+            <a id="current" href="kgs">.KGS_Experience( )</a>
+        </ul>
+    </nav>
+
+    <nav role="navigation" class="navbar_mobile">
+
+        <div class="hamburger_btn">
+            <i class="fa fa-bars" aria-hidden="false"></i>
+            <i class="fa fa-times-circle" aria-hidden="false"></i>
+        </div>
+
+
+        <ul>
+            <li><a class="first" href="index">.hello( )</a></li>
+            <li><a href="education">.education( )</a></li>
+            <li><a href="skills">.skills( )</a></li>
+            <li><a href="mmc">.MMC_experience( )</a></li>
+            <li><a id="current" href="kgs">.KGS_Experience( )</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="top_links">
+            <ul id="transparent" class="contact_list">
+                <ul id="transparent" class="contact_list">
+                    <a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                        <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                    </a>
+                    <a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                        <img src="files/github.png" alt="github logo" width="50" height="50">
+                    </a>
+                    <a href="mailto:ibrahimsecondary@gmail.com">
+                        <img src="files/mail.png" alt="email logo" width="50" height="50">
+                    </a>
+                    <a href="tel: +212675204495">
+                        <img src="files/call.png" alt="phone icon" width="50" height="50">
+                    </a>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content_wrapper">
+        <img id="kgs_logo" src="files/kgs.png" alt="Khalil Gibran School's Logo" width="149" height="70">
+        <h1 id="kgs_name" class="with_logo">Khalil Gibran School</h1>
+        <p>
+            A state of emergency was announced in Morocco on Saturday, April 11th, which required the complete shut down
+            of schools all over the country. Therefore, a classmate and I have decided to create a platform on "Discord"
+            for online learning and present it to the school's Director to continue studying on Monday without losing
+            valuable class sessions. We have completed the platform within a few hours, and I have contacted the
+            Director
+            for a
+            personal meeting to express my concerns and introduce our solution. The school's administration then
+            accepted the
+            plan, and our platform was put in place to replace the traditional face to face classes. We were the only
+            school
+            in the region to face the problem with such precision and without shutting down for a week.
+            <br><br>
+            I have then gathered a group of friends, whom I have given a short demo on how to use the platform so that
+            each
+            one of them could provide a presentation to another group of students and professors, and so forth.
+            <br><br>
+            Finally, I was also in charge of creating and providing Class schedules for the students, keeping professors
+            logs, reporting to the administration, adjusting the platform to address complaints, and giving weekly
+            tutorials
+            to new students and professors.
+            <br><br>
+            The platfom today is always operational and is being used as an alumnus server for Class of 2020.
+        </p>
+    </div>
+
+    <div class="special_wrapper">
+
+        <figure>
+            <img id="discord_img1" src="files/discord1.jpg" alt="Discord ScreenShot Number 1" width="900" height="600">
+            <figcaption>Public Text Channel for announcments and news</figcaption>
+        </figure>
+
+        <figure>
+            <img id="discord_img2" src="files/discord2.jpg" alt="Discord ScreenShot Number 2" width="848" height="322">
+
+            <figcaption>Group announcement for changes in program, as well as recorded lectures posted for private
+                viewing
+                only on Youtube</figcaption>
+        </figure>
+    </div>
+
+    <footer class="fixed">
+        <ul id="transparent" class="contact_list">
+            <li><a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                    <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                </a></li>
+            <li><a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                    <img src="files/github.png" alt="github logo" width="50" height="50">
+                </a></li>
+            <li><a href="mailto:ibrahimsecondary@gmail.com">
+                    <img src="files/mail.png" alt="email logo" width="50" height="50">
+                </a></li>
+            <li><a href="tel: +212675204495">
+                    <img src="files/call.png" alt="phone icon" width="50" height="50">
+                </a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

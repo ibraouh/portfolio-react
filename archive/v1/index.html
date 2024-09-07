@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ibrahim Portfolio" content="This is a portfolio Website for Ibrahim.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_btn .fa-times-circle").hide();
+
+            $(".hamburger_btn .fa-bars").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-times-circle").show();
+                $(".navbar_mobile ul").addClass("active");
+            });
+
+            $(".hamburger_btn .fa-times-circle").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-bars").show();
+                $(".navbar_mobile ul").removeClass("active");
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/ico" href="files/favicon.ico">
+    <title>Ibrahim | Portfolio</title>
+</head>
+
+<body>
+    <nav role="navigation" class="navbar">
+        <ul>
+            <a id="current" class="first" href="index">.hello( )</a>
+            <a href="education">.education( )</a>
+            <a href="skills">.skills( )</a>
+            <a href="mmc">.MMC_experience( )</a>
+            <a href="kgs">.KGS_Experience( )</a>
+        </ul>
+    </nav>
+
+    <nav role="navigation" class="navbar_mobile">
+
+        <div class="hamburger_btn">
+            <i class="fa fa-bars" aria-hidden="false"></i>
+            <i class="fa fa-times-circle" aria-hidden="false"></i>
+        </div>
+
+
+        <ul>
+            <li><a id="current" class="first" href="index">.hello( )</a></li>
+            <li><a href="education">.education( )</a></li>
+            <li><a href="skills">.skills( )</a></li>
+            <li><a href="mmc">.MMC_experience( )</a></li>
+            <li><a href="kgs">.KGS_Experience( )</a></li>
+        </ul>
+    </nav>
+
+    
+    <header>
+        <div class="top_links">
+            <ul id="transparent" class="contact_list">
+                <ul id="transparent" class="contact_list">
+                    <a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                        <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                    </a>
+                    <a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                        <img src="files/github.png" alt="github logo" width="50" height="50">
+                    </a>
+                    <a href="mailto:ibrahimsecondary@gmail.com">
+                        <img src="files/mail.png" alt="email logo" width="50" height="50">
+                    </a>
+                    <a href="tel: +212675204495">
+                        <img src="files/call.png" alt="phone icon" width="50" height="50">
+                    </a>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <div id="separator">
+
+    </div>
+
+    <div class="grid_container">
+        <div id="portrait_image_div">
+            <img id="portrait_image" src="files/IbrahimRaouh.png" alt="Ibrahim's Portrait Photo" width="309"
+                height="414">
+            <!-- All the animations and stuff for the Resume link -->
+        </div>
+
+        <div class="main_block">
+            <h1 class="main_title">Hi! I'm <br>Ibrahim {</h1>
+            <p class="main_paragraph">
+                I'm a Fordham University Sophomore (Class of
+                '24) majoring in Mathematics and Computer Science,
+                seeking an internship opportunity in the tech
+                industry for Summer ‘22. Interested in studies in
+                Artificial Intelligence, Robotics, and Machine
+                Learning. Experienced in Developing, Testing,
+                and Debugging Code as well as Technical
+                Problem Solving. Quick to learn and master
+                new technologies.
+            </p>
+            <h1 class="main_title">}</h1>
+        </div>
+    </div>
+
+    <footer class="fixed">
+        <ul id="transparent" class="contact_list">
+            <li><a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                    <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                </a></li>
+            <li><a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                    <img src="files/github.png" alt="github logo" width="50" height="50">
+                </a></li>
+            <li><a href="mailto:ibrahimsecondary@gmail.com">
+                    <img src="files/mail.png" alt="email logo" width="50" height="50">
+                </a></li>
+            <li><a href="tel: +212675204495">
+                    <img src="files/call.png" alt="phone icon" width="50" height="50">
+                </a></li>
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>

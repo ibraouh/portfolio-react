@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* 
+Main Background Color : #e0ddd7
+Green Accent Color    : #2a3419
+Red Accent Color      : #8a3f24
+*/
+
+/*+ General Settings -------------------------------------------- +*/
+body {
+  background-color: #e0ddd7;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Unbounded", cursive;
+  font-size: 400%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Unbounded", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.separation {
+  width: 100%;
+  height: 50px;
+}
+
+.mobile {
+  display: none;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Section Backgrounds ----------------------------------------- +*/
+#work {
+  background-color: #2a3419;
+  color: #e0ddd7;
+}
+
+#research {
+	background-color: #8a3f24;
+	color: #e0ddd7;
+  }
+
+
+.main_content {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.main_content h1 {
+  margin-top: 0;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Header Settings --------------------------------------------- +*/
+header {
+  padding-bottom: 10px;
+  border-bottom: solid 1px gray;
+}
+
+header h1 {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+}
+
+header nav ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+header nav ul li:hover {
+  text-decoration: underline;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.resume,
+.blog {
+  color: #8a3f24;
+  font-weight: 400;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ About Me Section -------------------------------------------- +*/
+
+#about_me h1 {
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+#about_me div.right {
+  margin-right: 5%;
+}
+
+#about_me div.left {
+  margin-left: 5%;
+}
+
+#about_me div.right,
+#about_me div.left {
+  width: 45%;
+  float: left;
+}
+
+#about_me div.right {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#about_me p {
+  width: 80%;
+  font-size: 20px;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Work XP Section --------------------------------------------- +*/
+#work h1 {
+  margin-bottom: 0;
+  /* padding-top: 0px;
+  margin-top: 0px; */
+}
+
+#work {
+  padding-bottom: 45px;
+}
+
+.job {
+  /* border: solid yellow; */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+}
+
+.job .job_date {
+  /* border: solid; */
+  padding-top: 11px;
+  width: 12%;
+  float: left;
+}
+
+.job .content {
+  /* border: solid blue; */
+  width: 80%;
+  float: left;
+}
+
+#work b {
+	color: #d8937a;
+}
+
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Projects Section -------------------------------------------- +*/
+.project_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+#projects p em {
+  color: #e0ddd7;
+  background-color: #2a3419;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.proj_img {
+  border-radius: 20px;
+}
+
+
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Research Section ------------------------------------------- +*/
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+#research h5 {
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+#research h4 {
+  margin-bottom: 0px;
+}
+
+#research b {
+	color: #2b331d;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Footer Section ---------------------------------------------- +*/
+/* footer *{
+	border: solid;
+} */
+
+footer {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#signature ul {
+  padding-bottom: 10px;
+  text-decoration: underline;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#socials ul {
+  text-decoration: none;
+  text-align: right;
+  list-style-type: none;
+}
+
+.email {
+  text-decoration: underline;
+}
+/*+ ------------------------------------------------------------- +*/
+
+/*+ Mobile Section ---------------------------------------------- +*/
+@media screen and (max-width: 320px) {
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
+
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
+
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
+
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+}

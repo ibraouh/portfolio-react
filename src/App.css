@@ -1,0 +1,632 @@
+/* General Styles --------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+/* Header Styles ---------------------------------------------- */
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  font-size: 1.5em;
+  /* color: #333; */
+  color: #ba3f1d;
+  margin: 0;
+}
+
+nav ul {
+  font-family: monospace;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #80a1c1;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #80a1c1;
+  color: #fff;
+}
+
+/* About Me Section ------------------------------------------ */
+#about_me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #f0e9de;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Content */
+.about-text {
+  max-width: 50%;
+  text-align: left;
+  padding-right: 30px;
+}
+
+#about_me h1 {
+  font-size: 3.2em;
+  color: #2d2d2d;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.5em;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#about_me p {
+  font-size: 1.2em;
+  margin: 0;
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Image */
+.about-image {
+  max-width: 40%;
+  text-align: center;
+}
+
+#about_me img {
+  width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  #about_me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .about-image {
+    display: none;
+  }
+}
+
+/* Work Experience Section ------------------------------------- */
+#work {
+  padding: 20px 0px;
+  background-color: #fff;
+}
+
+#work h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Cards Container */
+#work > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Card */
+#work > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #a77e58;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 0 1 calc(40% - 40px);
+  max-width: calc(40% - 40px);
+}
+
+#work > div > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Company Logo */
+#work > div > div > div:first-child {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+#work img {
+  max-height: 60px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Job Details */
+#work > div > div > div:last-child {
+  flex: 1 1 auto;
+}
+
+#work h2 {
+  font-size: 1.5em;
+  /* color: #007bff; */
+  color: White;
+  margin: 10px 0;
+  font-family: monospace;
+}
+
+#work p {
+  color: #e0ddd8;
+  margin: 5px 0;
+}
+
+#work ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #e0ddd8;
+  margin: 5px 0;
+}
+
+#work ul li {
+  margin-bottom: 10px;
+}
+
+/* Projects Section ------------------------------------- */
+#projects {
+  padding: 40px 0px;
+  background-color: #e4d9b6;
+  position: relative;
+  overflow: hidden;
+}
+
+#projects h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Scroll Container */
+#projects .scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 20px;
+  scrollbar-width: none; /* For Firefox */
+}
+#projects .scroll-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Individual Card */
+#projects .scroll-container > div {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  margin: 10px;
+  min-width: 500px;
+  max-width: 500px;
+  flex: 0 0 auto;
+}
+
+#projects .scroll-container > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+#projects img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Project Title */
+#projects h4 {
+  font-size: 1.5em;
+  color: #ba3f1d;
+  margin-bottom: 10px;
+}
+
+/* Project Description */
+#projects p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Tags */
+#projects em {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+/* Arrow Buttons */
+#projects .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#projects .arrow-left {
+  left: 10px;
+}
+
+#projects .arrow-right {
+  right: 10px;
+}
+
+/* Research Experience Section ------------------------------------- */
+#research {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#research h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Cards Container */
+#research > div > div {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* Individual Card */
+#research > div > div > div {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  margin: 10px;
+  flex: 0 1 calc(50% - 40px);
+  max-width: calc(50% - 40px);
+}
+
+#research > div > div > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Research Project Details */
+#research h4 {
+  font-size: 1.25em;
+  color: #80a1c1;
+  margin-bottom: 5px;
+}
+
+#research h5 {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#research p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#research ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+#research ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer Section --------------------------------------------- */
+footer {
+  background-color: #a77e58;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  color: #eee;
+  font-style: underline;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Signature Section */
+#signature {
+  flex: 1 1 50%;
+}
+
+#signature ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#signature ul li {
+  display: inline;
+}
+
+/* Social Links Section */
+#socials {
+  flex: 1 1 50%;
+}
+
+#socials ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#socials ul li {
+  display: inline;
+}
+
+#socials img {
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+
+#socials img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design ----------------------------------------- */
+@media (max-width: 1200px) {
+  footer {
+    flex-direction: column;
+  }
+
+  #signature,
+  #socials {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #signature ul,
+  #socials ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Responsive Design ----------------------------------------- */
+
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #about_me {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #about_me > div:first-child {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about_me img {
+    width: 100%;
+    max-width: 100%;
+  }
+  #work > div > div {
+    flex: 0 1 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+
+  #work > div > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #work > div > div > div:first-child {
+    margin-bottom: 20px;
+  }
+  #projects > div > div > div {
+    flex: 0 1 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+  #research > div > div > div {
+    flex: 0 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+  #signature,
+  #socials {
+    flex: 1 1 auto;
+  }
+
+  #signature {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  #socials {
+    text-align: right;
+  }
+}
+
+@media (max-width: 1200px) {
+  #work > div > div {
+    flex: 0 1 calc(90% - 40px);
+    max-width: calc(90% - 40px);
+  }
+
+  #projects > div > div > div {
+    flex: 0 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+  #research > div > div > div {
+    flex: 0 1 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    flex-wrap: wrap;
+  }
+
+  #research > div > div {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  #work {
+    padding: 20px 10px;
+  }
+
+  #work h1 {
+    font-size: 1.5em;
+  }
+
+  #work h2 {
+    font-size: 1.2em;
+  }
+
+  #work p,
+  #work ul li {
+    font-size: 0.9em;
+  }
+}
+/* ----------------------------------------------------------------  */
+
+/* Floating Cat Section -------------------------------------- */
+#floating-cat {
+  height: 90px; /* Restrict the height of the section */
+  /* overflow: hidden; */
+  /* background-color: red; */
+
+  position: relative;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.cat-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.jumping-cat {
+  position: absolute;
+  width: 100px; /* Adjust size of the cat */
+  animation: jump-across-screen 10s infinite linear; /* Move across the screen */
+}
+
+/* Keyframes for Smooth Jumping and Horizontal Movement */
+@keyframes jump-across-screen {
+  0% {
+    transform: translateY(0px) translateX(100px); /* Start at the left */
+  }
+  25% {
+    transform: translateY(30px) translateX(75vw); /* Jump upwards and move right */
+  }
+  50% {
+    transform: translateY(0px) translateX(50vw); /* Land back to the ground, halfway across */
+  }
+  75% {
+    transform: translateY(30px) translateX(25vw); /* Jump again near the end */
+  }
+  100% {
+    transform: translateY(0px) translateX(0vw); /* Finish at the right */
+  }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Skills" content="This page includes a list of Ibrahim's Skills and Hobbies.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_btn .fa-times-circle").hide();
+
+            $(".hamburger_btn .fa-bars").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-times-circle").show();
+                $(".navbar_mobile ul").addClass("active");
+            });
+
+            $(".hamburger_btn .fa-times-circle").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-bars").show();
+                $(".navbar_mobile ul").removeClass("active");
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/ico" href="files/favicon.ico">
+    <title>Skills</title>
+</head>
+
+<body>
+    <nav role="navigation" class="navbar">
+        <ul>
+            <a class="first" href="index">.hello( )</a>
+            <a href="education">.education( )</a>
+            <a id="current" href="skills">.skills( )</a>
+            <a href="mmc">.MMC_experience( )</a>
+            <a href="kgs">.KGS_Experience( )</a>
+        </ul>
+    </nav>
+
+    <nav role="navigation" class="navbar_mobile">
+
+        <div class="hamburger_btn">
+            <i class="fa fa-bars" aria-hidden="false"></i>
+            <i class="fa fa-times-circle" aria-hidden="false"></i>
+        </div>
+
+
+        <ul>
+            <li><a class="first" href="index">.hello( )</a></li>
+            <li><a href="education">.education( )</a></li>
+            <li><a id="current" href="skills">.skills( )</a></li>
+            <li><a href="mmc">.MMC_experience( )</a></li>
+            <li><a href="kgs">.KGS_Experience( )</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="top_links">
+            <ul id="transparent" class="contact_list">
+                <ul id="transparent" class="contact_list">
+                    <a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                        <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                    </a>
+                    <a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                        <img src="files/github.png" alt="github logo" width="50" height="50">
+                    </a>
+                    <a href="mailto:ibrahimsecondary@gmail.com">
+                        <img src="files/mail.png" alt="email logo" width="50" height="50">
+                    </a>
+                    <a href="tel: +212675204495">
+                        <img src="files/call.png" alt="phone icon" width="50" height="50">
+                    </a>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content_wrapper">
+        <h1 class="next_to_navbar">Programming</h1>
+        <p>
+            I enjoy programming to solve some of the common problems that I experience daily.
+            For instance, I have coded a C++ Program called NYC-Budget to calculate, from user input of salary,
+            the personal expenses to live in NYC with an auto-generated list of tips to save up money living in the
+            World's
+            most expansive city. Currently, I can use the following programming and markup languages:
+            <b>
+                <ul>
+                    <li>C++ (Advanced Level)</li>
+                    <li>Python (Intermediate Level)</li>
+                    <li>C (Intermediate Level)</li>
+                    <li>JavaScript (Basic Level)</li>
+                    <li>HTML (Advanced Level)</li>
+                    <li>CSS (Intermediate Level)</li>
+                </ul>
+            </b>
+        <p>
+            I continuously try to improve my programming skills by taking online courses on Linked Learning and Code
+            Academy, as well as attending programming webinars and camps.
+        </p>
+        </p>
+    </div>
+
+    <div class="content_wrapper">
+        <h1>Software</h1>
+        <p>
+            Being proficient in using multiple software types is an essential "skill" to have; that's why I try to learn
+            and expand my knowledge to get exposed to a more extensive set of industries. They include:
+            <b>
+                <ul>
+                    <li>Adobe Professional Suite for photo and video editing and processing</li>
+                    <li>Final Cut Pro for video editing</li>
+                    <li>GarageBand for music production and tweaking</li>
+                    <li>Apple, Google, and Microsoft text editing suites</li>
+                </ul>
+            </b>
+        </p>
+    </div>
+
+    <div class="content_wrapper">
+        <h1>Other</h1>
+        <p>
+            From my past job experience, I have learned many soft skills needed to manage and lead a group (and work in
+            a group) while quickly and efficiently achieving goals. Moreover, from constant interactions with consumers,
+            I have understood how to properly address another person and execute a successful sale.
+            <br><br>
+            I can also speak fluent French, Arabic, and English and have done multiple professional translations for
+            non-profit organizations.
+        </p>
+    </div>
+
+    <div class="content_wrapper">
+        <h1>Extracurricular Activities</h1>
+        <p>
+            I have been playing music for the past 13 years, where I was a part of the Moroccan Gendarmerie Conservatory
+            in
+            Rabat,
+            Morocco. I mainly play the classical piano but enjoy playing the violin, guitar, and flute.
+            <br><br>
+            Additionally, I always try to stay physically active by practicing sports such as basketball and soccer.
+            <br><br>
+        </p>
+    </div>
+
+    <footer class="fixed">
+        <ul id="transparent" class="contact_list">
+            <li><a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+                    <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
+                </a></li>
+            <li><a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+                    <img src="files/github.png" alt="github logo" width="50" height="50">
+                </a></li>
+            <li><a href="mailto:ibrahimsecondary@gmail.com">
+                    <img src="files/mail.png" alt="email logo" width="50" height="50">
+                </a></li>
+            <li><a href="tel: +212675204495">
+                    <img src="files/call.png" alt="phone icon" width="50" height="50">
+                </a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
